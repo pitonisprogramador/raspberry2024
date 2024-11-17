@@ -1,0 +1,6 @@
+- Definicion de la clase 'MotorDC' para el control básico de los motores (girar izquierda, girar derecha, parar)
+- Se añade el control de velocidad con PWM (sobre pin Enable) en la 'motorDC' y funciona correctamente.
+- Se mejora la definicion de la clase MotorDC y se añaden Multiprocesos para que cada motor sea controlado por un proceso. NO FUNCIONA 
+- Comprobamos que funciona PWM con multiprocesos pero sin utilizar la clase MotorDC (utilizamos funciones).
+- Mantenemos PWM, cambiamos a multithreading y recuperamos la clase MotorDC y funciona correctamente.
+- La consulta a ChatGPT tambien confirma que es mejor utilizar hilos (threads) cuando hay que acceder al hardware de la RPi.

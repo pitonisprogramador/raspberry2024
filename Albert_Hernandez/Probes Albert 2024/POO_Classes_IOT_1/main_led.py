@@ -1,0 +1,23 @@
+import led_classe   # Librerias
+
+led1 = LED(23)      # Creación Objeto (Led1)
+led2 = LED(24)      # Creación Objeto (Led2) 
+
+
+#-------------------  MAIN 
+ 
+Try: 
+    while True:        # Bucle Infinito
+     
+        time.sleep(1)  # Retardo Tiempo (1Seg)
+        led1.alternar()# Alternar encendido Led1 (ON/OFF)
+     
+        time.sleep(1)  # Retardo Tiempo (1Seg)
+        led2.alternar()# Alternar encendido Led2 (ON/OFF)
+        
+
+
+#-------------------  INTERRUPCCIONES
+
+except KeyboardInterrupt:
+    cleanup()         # Limpieza Config. PIN's 

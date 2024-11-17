@@ -1,0 +1,12 @@
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides: Arranque_aut_2
+# Required-Start: $syslog
+# Required-Stop: $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: Arranque Motor (RaspBerry + L293D).
+### END INIT INFO
+
+python3 /home/admin/Motor_Main.py
